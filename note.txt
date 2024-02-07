@@ -10,8 +10,11 @@ dotenv
 tailwind
 redux
 chart.js
+babel-plugin-module-resolver
 
 config like: (npm package should not update, code should be prettier, unused code should not be there, extra spacing not allowed)
+
+in import filename - it should not be like ../../
 
 axios with common API call(single & multiple API call) with auth token should be available
 
@@ -22,3 +25,4 @@ npx create-react-app .
 
 npm i formik axios react-datepicker yup react-select react-icons
 npm install eslint prettier eslint-plugin-prettier eslint-config-prettier --save-dev
+npm install --save-dev babel-plugin-module-resolver
