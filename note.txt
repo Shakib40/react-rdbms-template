@@ -1,0 +1,24 @@
+frontend
+
+formik.js
+yup
+axios
+react-select
+react-icons
+react-datepicker
+dotenv
+tailwind
+redux
+chart.js
+
+config like: (npm package should not update, code should be prettier, unused code should not be there, extra spacing not allowed)
+
+axios with common API call(single & multiple API call) with auth token should be available
+
+
+
+client:
+npx create-react-app .
+
+npm i formik axios react-datepicker yup react-select react-icons
+npm install eslint prettier eslint-plugin-prettier eslint-config-prettier --save-dev

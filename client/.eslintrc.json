@@ -1,0 +1,83 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ],
+  "overrides": [
+    {
+      "env": {
+        "node": true
+      },
+      "files": [
+        ".eslintrc.{js,cjs}"
+      ],
+      "parserOptions": {
+        "sourceType": "script"
+      }
+    }
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "plugins": [
+    "react"
+  ],
+  "ignorePatterns": [
+    "/node_modules/*.js",
+    "/config/*.js",
+    "/config/*/*.js",
+    "/config/*/*/*.js",
+    "/scripts/*.js"
+  ],
+  "rules": {
+    "indent": [
+      "error",
+      2
+    ],
+    "no-multi-spaces": "error",
+    "eqeqeq": "error",
+    "max-len": [
+      "error",
+      {
+        "code": 120
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "react/prop-types": "off",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "quotes": [
+      "error",
+      "single"
+    ], // Use single quotes for strings
+    "semi": [
+      "error",
+      "always"
+    ], // Require semicolons at the end of statements
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1
+      }
+    ] // Adjust the max value as needed
+  }
+}
