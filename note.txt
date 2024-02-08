@@ -1,21 +1,17 @@
 frontend
 
-formik.js
-yup
-axios
-react-select
-react-icons
-react-datepicker
+react-router-dom
+
 dotenv
 tailwind
 redux
 chart.js
+
 babel-plugin-module-resolver
 
+
 config like: (npm package should not update, code should be prettier, unused code should not be there, extra spacing not allowed)
-
 in import filename - it should not be like ../../
-
 axios with common API call(single & multiple API call) with auth token should be available
 
 
@@ -23,6 +19,12 @@ axios with common API call(single & multiple API call) with auth token should be
 client:
 npx create-react-app .
 
-npm i formik axios react-datepicker yup react-select react-icons
+npm i formik yup axios react-datepicker react-select react-icons
 npm install eslint prettier eslint-plugin-prettier eslint-config-prettier --save-dev
-npm install --save-dev babel-plugin-module-resolver
+npm install eslint eslint-plugin-react --save-dev
+npm i prop-types
+npm install @reduxjs/toolkit
+npm install react-redux
+npm install dotenv
+
+npx eslint .

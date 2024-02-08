@@ -1,6 +1,6 @@
 import React from 'react';
-import Register from '@components/Register';
-import Login from '@components/Login';
+import Register from './components/Register';
+import Login from './components/Login';
 
 function App() {
 
@@ -10,7 +10,7 @@ function App() {
         <Login/>
       </div>
       <div className="border border-black flex-1 p-4">
-        <Register/>
+        <Register title="Register"/>
       </div>
     </div>
   );
