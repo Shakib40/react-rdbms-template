@@ -6,6 +6,8 @@ route should be protected based on role
 
 
 client:
+
+
 npx create-react-app .
 
 npm i formik yup axios react-datepicker react-select react-icons
@@ -15,4 +17,30 @@ npm i prop-types
 npm install @reduxjs/toolkit
 npm install react-redux
 npm install dotenv
-npm i react-router-dom
+npm install react-router-dom
+
+
+
+server:
+
+npm install express nodemon
+npm install sequelize mysql2
+npm install dotenv body-parser compression cors
+npm install jsonwebtoken bcrypt
+npm install joi
+
+
+
+basic mysql command:
+
+create database sample;
+use sample;
+
+CREATE TABLE IF NOT EXISTS users (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  email VARCHAR(255) NOT NULL,
+  password VARCHAR(255) NOT NULL
+);
+
+
+
