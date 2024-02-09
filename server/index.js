@@ -1,35 +1,35 @@
-var express = require("express");
-const compression = require("compression");
-const cors = require("cors");
-var bodyParser = require("body-parser");
+/* eslint-disable no-unused-vars */
+var express = require('express');
+const compression = require('compression');
+const cors = require('cors');
+var bodyParser = require('body-parser');
 var app = express();
 app.use(compression());
-app.use(cors({ origin: "http://localhost:3000", credentials: true }));
+app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 
-const sequelizeConnection = require("./src/helper/database");
+const sequelizeConnection = require('./src/helper/database');
 
 // app.use(bodyParser.urlencoded()); // x-www-form-urlencoded <form>
 app.use(bodyParser.json()); // application/json
 
 app.use((request, response, next) => {
-  response.setHeader("Access-Control-Allow-Origin", "*");
+  response.setHeader('Access-Control-Allow-Origin', '*');
   response.setHeader(
-    "Access-Control-Allow-Methods",
-    "OPTIONS, GET, POST, PUT, PATCH, DELETE"
+    'Access-Control-Allow-Methods',
+    'OPTIONS, GET, POST, PUT, PATCH, DELETE'
   );
-  response.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  response.setHeader('Access-Control-Allow-Headers', 'Content-Type, Authorization');
   next();
 });
 
 // ROUTES
-app.use("/authentication", require("./src/routes/auth.routes"));
-
+app.use('/authentication', require('./src/routes/auth.routes'));
 
 app.use((error, request, response, next) => {
   const status = error.statusCode || 500;
   const message = error.message;
   const data = error.data;
-  response.status(status).json({ message: message, data: data, status: "FAILED" });
+  response.status(status).json({ message: message, data: data, status: 'FAILED' });
 });
 
 sequelizeConnection
@@ -40,5 +40,5 @@ sequelizeConnection
     });
   })
   .catch((error) => {
-    console.log('\x1b[31m%s\x1b[0m', "Something went wrong while connecting to database.", error);
+    console.log('\x1b[31m%s\x1b[0m', 'Something went wrong while connecting to database.', error);
   });

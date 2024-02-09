@@ -1,18 +1,17 @@
-frontend
+setup left
 
 react-router-dom
 in import filename - it should not be like ../../
 route should be protected based on role
 
 
-client:
+###client:
 
 
 npx create-react-app .
 
 npm i formik yup axios react-datepicker react-select react-icons
-npm install eslint prettier eslint-plugin-prettier eslint-config-prettier --save-dev
-npm install eslint eslint-plugin-react --save-dev
+npm install eslint prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-react --save-dev
 npm i prop-types
 npm install @reduxjs/toolkit
 npm install react-redux
@@ -21,7 +20,7 @@ npm install react-router-dom
 
 
 
-server:
+###server:
 
 npm install express nodemon
 npm install sequelize mysql2
@@ -29,9 +28,11 @@ npm install dotenv body-parser compression cors
 npm install jsonwebtoken bcrypt
 npm install joi
 
+npm install eslint prettier eslint-plugin-prettier eslint-config-prettier eslint-plugin-react --save-dev
 
 
-basic mysql command:
+
+###basic mysql command:
 
 create database sample;
 use sample;

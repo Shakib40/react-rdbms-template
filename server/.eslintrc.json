@@ -1,0 +1,78 @@
+{
+    "env": {
+      "browser": true,
+      "es2021": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:react/recommended"
+    ],
+    "overrides": [
+      {
+        "env": {
+          "node": true
+        },
+        "files": [
+          ".eslintrc.{js,cjs,jsx}"
+        ],
+        "parserOptions": {
+          "sourceType": "script"
+        }
+      }
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2021,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "jsx": true
+      }
+    },
+    "plugins": [
+      "react"
+    ],
+    "settings": {
+      "react": {
+        "version": "detect" // Automatically detect the React version
+      }
+    },
+    "ignorePatterns": [
+      "/node_modules/*.js",
+      "/config/*.js",
+      "/config/*/*.js",
+      "/config/*/*/*.js",
+      "/scripts/*.js"
+    ],
+    "rules": {
+      "indent": [
+        "error",
+        2
+      ],
+      "no-multi-spaces": "error",
+      "eqeqeq": "error",
+      "no-undef": "off",
+      "max-len": [
+        "error",
+        {
+          "code": 120
+        }
+      ],
+      "comma-dangle": [
+        "error",
+        "never"
+      ],
+      "quotes": [
+        "error",
+        "single"
+      ],
+      "semi": [
+        "error",
+        "always"
+      ], 
+      "no-multiple-empty-lines": [
+        "error",
+        {
+          "max": 1
+        }
+      ] 
+    }
+  }
