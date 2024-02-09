@@ -1,4 +1,3 @@
-// store/store.js
 import { configureStore } from '@reduxjs/toolkit';
 import { setupListeners } from '@reduxjs/toolkit/query/react';
 import PRODUCT_REDUCER from './slice/ProductSlice';

@@ -30,6 +30,11 @@
   "plugins": [
     "react"
   ],
+  "settings": {
+    "react": {
+      "version": "detect" // Automatically detect the React version
+    }
+  },
   "ignorePatterns": [
     "/node_modules/*.js",
     "/config/*.js",

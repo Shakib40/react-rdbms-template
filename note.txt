@@ -1,19 +1,8 @@
 frontend
 
 react-router-dom
-
-dotenv
-tailwind
-redux
-chart.js
-
-babel-plugin-module-resolver
-
-
-config like: (npm package should not update, code should be prettier, unused code should not be there, extra spacing not allowed)
 in import filename - it should not be like ../../
-axios with common API call(single & multiple API call) with auth token should be available
-
+route should be protected based on role
 
 
 client:
@@ -26,5 +15,4 @@ npm i prop-types
 npm install @reduxjs/toolkit
 npm install react-redux
 npm install dotenv
-
-npx eslint .
+npm i react-router-dom
