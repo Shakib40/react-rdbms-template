@@ -25,6 +25,7 @@ app.use((request, response, next) => {
 // ROUTES
 app.use('/authentication', require('./src/routes/auth.routes'));
 app.use('/user', require('./src/routes/user.routes'));
+app.use('/html', require('./src/routes/file.routes'));
 
 app.use((error, request, response, next) => {
   const status = error.statusCode || 500;
